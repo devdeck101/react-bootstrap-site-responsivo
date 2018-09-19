@@ -30,7 +30,7 @@
 
 .footer {
   /* position: relative;fixed */
-  position: relative;
+  position: fixed;
   bottom: 0;
   height: 50px;
 }
