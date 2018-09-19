@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="container-fluid p-0">
 
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
           <a className="navbar-brand" href="#"><i className="fas fa-stroopwafel"></i>&nbsp;DeveloperDeck101</a>
 
@@ -50,7 +50,7 @@ class App extends Component {
         </nav>
 
 
-        <section className="container p-2">
+        <section className="container p-3 mt-5 mb-5">
           <ul className="list-unstyled">
 
             {
