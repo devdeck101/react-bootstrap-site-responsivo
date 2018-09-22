@@ -11,10 +11,10 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount(){
     fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
-      .then(response => response.json())
-      .then(json => this.setState({ photos: json }))
+    .then(response => response.json())
+    .then(json => this.setState({photos: json}))
   }
 
   render() {
@@ -49,6 +49,7 @@ class App extends Component {
           </section>
         </nav>
 
+<<<<<<< HEAD
         <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
           <ol className="carousel-indicators">
             <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
@@ -80,6 +81,8 @@ class App extends Component {
           </div>
 
         </section>
+=======
+>>>>>>> f84f0085c3c7c4e906777a111e0bfceb58cd82f5
 
         <section className="container p-3 mt-5 mb-5">
           <ul className="list-unstyled">
