@@ -11,10 +11,10 @@ class App extends Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
-    .then(response => response.json())
-    .then(json => this.setState({photos: json}))
+      .then(response => response.json())
+      .then(json => this.setState({ photos: json }))
   }
 
   render() {
@@ -49,6 +49,37 @@ class App extends Component {
           </section>
         </nav>
 
+        <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselSection" data-slide-to="1"></li>
+            <li data-target="#carouselSection" data-slide-to="2"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="https://via.placeholder.com/600/92c952" alt="Imagem 1" className="d-block w-100 image-fluid" />
+              <div className="carousel-caption d-none d-md-block">
+                <h4>Imagem 1</h4>
+                <p>Alguma Informação</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src="https://via.placeholder.com/600/771796" alt="Imagem 2" className="d-block w-100 image-fluid" />
+            </div>
+            <div className="carousel-item">
+              <img src="https://via.placeholder.com/600/24f355" alt="Imagem 3" className="d-block w-100 image-fluid" />
+            </div>
+          </div>
+          <div className="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </div>
+          <div className="carousel-control-next" href="#carouselSection" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </div>
+
+        </section>
 
         <section className="container p-3 mt-5 mb-5">
           <ul className="list-unstyled">
